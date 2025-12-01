@@ -1,0 +1,92 @@
+/* Hover animations for buttons and interactive elements */
+
+/* Button hover effects */
+button,
+[role="button"],
+.hover-effect {
+  transition: all 0.3s ease;
+}
+
+/* Green filled buttons */
+.bg-\[#00af57\]:hover,
+.bg-\[#00AB57\]:hover {
+  background-color: #009e4d !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 175, 87, 0.3);
+}
+
+/* White outlined buttons */
+[class*="border-[#00af57]"]:hover {
+  background-color: rgba(0, 175, 87, 0.05);
+  border-color: #009e4d;
+  transform: translateY(-2px);
+}
+
+/* Card hover effects */
+[class*="rounded-[20px]"][class*="bg-white"]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+/* Checkbox hover effects */
+input[type="checkbox"],
+[class*="border-[#e6e6e6]"] {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+[class*="border-[#e6e6e6]"]:hover {
+  border-color: #00af57;
+  transform: scale(1.05);
+}
+
+/* Image gallery hover effects */
+[data-name*="картинка"]:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+
+/* Hover effect for "Показать еще" */
+.text-\[#5c5c5c\]:hover {
+  color: #00af57 !important;
+  cursor: pointer;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, [role="button"] {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dropdown arrow animation */
+[class*="Vector 32"] {
+  transition: transform 0.3s ease;
+}
+
+/* Scale effect for benefit cards */
+[class*="bg-[#ebebeb]"]:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Pill badges hover */
+[class*="rounded-[100px]"]:not(button):hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+/* Side button hover (Стать частью команды) */
+[class*="rotate-[270deg]"]:hover {
+  transform: rotate(270deg) scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Input focus states */
+input:focus,
+select:focus {
+  outline: 2px solid #00af57;
+  outline-offset: 2px;
+}
